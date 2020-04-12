@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'partials/_head.html' %}
+  </head>
+  <body>
+    <!-- Navigation -->
+    {% include 'partials/_navbar.html' %}
+
+    <!-- Header -->
+    {% block header %}
+    {% endblock header %}
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+
+    {% include 'partials/_js.html' %}
+
+  </body>
+</html>
